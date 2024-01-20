@@ -1,0 +1,14 @@
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; /* Added 'px' unit */
+}
+
+.image a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.image p {
+    font-size: 20px; /* Added 'px' unit */
+}

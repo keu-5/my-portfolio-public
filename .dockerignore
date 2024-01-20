@@ -1,0 +1,54 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyc
+*.pyo
+*.pyd
+#*.db
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__
+local_settings.py
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# React
+build/
+dist/
+.DS_Store
+yarn-error.log
+
+# Virtual environment
+venv/
+env/
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Editor
+.vscode/
+*.sublime*
+*.idea/
+*.pyc
+
+# Logs and databases
+*.log
+#*.sqlite3
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+
+# Tests
+__tests__/
+tests/

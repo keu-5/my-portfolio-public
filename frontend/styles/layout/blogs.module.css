@@ -1,0 +1,18 @@
+.image, .imagelarge {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; /* Added 'px' unit */
+}
+
+.image a:hover, .imagelarge a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.image p, .imagelarge p {
+    font-size: 20px; /* Added 'px' unit */
+}
+
+.imagelarge a {
+    width: 50%;
+}

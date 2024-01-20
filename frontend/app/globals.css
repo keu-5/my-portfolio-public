@@ -1,0 +1,97 @@
+/*NOTE: すべてのページにCSSを適用*/
+/*変数*/
+:root {
+  /*カラー変数*/
+  --white: #ffffff;
+  --gray-10: #eeeeee;
+  --gray-25: #aaaaaa;
+  --gray-50: #707070;
+  --gray-75: #444444;
+  --black: #222222;
+  --accent: #0b87e0;
+
+  /*タイポグラフィ変数(フォントサイズ)*/
+  /*モバイル用とデスクトップ用*/
+  --body: clamp(1rem, 0.95rem + 0.2vw, 1rem);
+  --display: clamp(4.5rem, 1.28rem + 7.938vw, 8rem);
+  --heading1: clamp(2rem, 1.3rem + 3vw, 3rem);
+  --heading2: calc(var(--body) * 1.3);
+  --heading3: calc(var(--body) * 1.1);
+  --small-heading2: clamp(0.875rem, 4vw - 1rem, 1.1rem);
+  --small-heading3: calc(var(--small-heading2) * 0.8);
+
+  /*スペース*/
+  /*タイポグラフィと同様*/
+  --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem);
+  --space-sm: calc(var(--space-xs) * 1.5);
+  --space-md: calc(var(--space-xs) * 2);
+  --space-lg: calc(var(--space-xs) * 3);
+  --space-xl: calc(var(--space-xs) * 4);
+  --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
+}
+
+/*基本設定*/
+body {
+  color: var(--black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--body);
+}
+
+h1 {
+  font-size: var(--heading1);
+}
+
+h2 {
+  font-size: var(--heading2);
+}
+
+h3 {
+  font-size: var(--heading3);
+}
+
+span > img { /*span直下のimg*/
+  transition: 0.2s;
+}
+
+/*NOTE: リセット*/
+/*ブラウザが標準でcssを適用しているのでそれらをリセットする*/
+body, h1, h2, h3, p, figure, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*リストマーク*/
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit; /*リンクの色を親要素にそろえる*/
+  text-decoration: none; /*下線を削除*/
+}
+
+input, textarea {
+  background-color: var(--gray-10);
+  border: none;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: var(--gray-75);
+  width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--gray-25);
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  input, textarea {
+      flex-grow: 1;
+      width: auto;
+  }
+}
+
+small {
+  font-size: 12px;
+}

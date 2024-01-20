@@ -1,0 +1,24 @@
+.list {
+    display: flex; /*横並び*/
+    gap: 2em; /*間隔*/
+}
+
+.list a:hover { /*NOTE: ホバー時の文字色をアクセントカラーに*/
+    color: var(--accent);
+}
+
+@media (hover: hover) { /*NOTE: ホバーできるメディア*/
+    .list a:hover {
+        color: var(--accent);
+    }
+}
+
+@media (hover: none) { /*NOTE: ホバーできないメディア（スマホ）*/
+    .list a {
+        -webkit-tap-highlight-color: transparent; /*標準の表示を削除*/
+    }
+
+    .list a:active {
+        color: var(--accent); /*タップ時のみにアクセントカラーで表示*/
+    }
+}

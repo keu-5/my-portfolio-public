@@ -1,0 +1,23 @@
+.flexContainer {
+    margin: 0 100px;
+}
+
+.comment {
+    margin: 50px 10px;
+}
+
+.text {
+    padding-top: calc(var(--display) * 0.3);
+    padding-bottom: calc(var(--display) * 0.5);
+    text-align: center;
+}
+
+@media (min-width: 980px) { /*NOTE: 画面の最小値が980pxの時*/
+    .text {
+        text-align: left;
+    }
+}
+
+.title {
+    margin: 15px;
+}

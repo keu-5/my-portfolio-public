@@ -1,0 +1,45 @@
+.flexContainer {
+    composes: sideBySide from "@/styles/layout/utils.module.css";
+    gap: 2em;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 980px) { /*NOTE: 画面の最小値が980pxの時*/
+    .text {
+        text-align: left;
+        width: 70%;
+    }
+}
+
+.text > * + * { /* NOTE: フクロウセレクタ */
+    margin-top: 20px;
+}
+
+.wrapper {
+    padding: var(--space-xs) 0;
+}
+
+.image {
+    padding-top: 0;
+    width: 50%;
+}
+
+@media (min-width: 980px) {
+    .image {
+        padding-top: var(--space-sm);
+        width: 25%;
+    }
+}
+
+.delete {
+    display: none;
+}
+
+.create {
+    display: block;
+    margin-top: 50px;
+}
