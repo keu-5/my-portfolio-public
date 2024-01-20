@@ -25,7 +25,7 @@ class MailSendView(generics.ListAPIView):
         subject = request.data.get('name', '')
         message = request.data.get('message', '')
         from_email = request.data.get('email', '')
-        recipient_list = ['keu02.78@gmail.com']
+        recipient_list = ['test@example.com']
         
         instance = Mail(
             name=subject, 

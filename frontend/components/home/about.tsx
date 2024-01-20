@@ -33,7 +33,7 @@ export default function About({easy = false} : { easy?: boolean }) {
                         </p>
                         <p>
                             [連絡先情報]<br />
-                            - メール: [<a href="mailto:keu02.78@gmail.com">keu02.78@gmail.com</a>]<br />
+                            - メール: [<a href="mailto:test@example.com">test@example.com</a>]<br />
                             - GitHub: [<a href="https://github.com/keu-5" target="_blank" rel="noopener noreferrer">https://github.com/keu-5</a>]
                         </p>
                     </div>
